@@ -1,0 +1,100 @@
+
+
+/* CSS RESET */
+
+
+* {
+    margin: 0; /* Remove default margin from all elements */
+    padding: 0; /* Remove default padding from all elements */
+    box-sizing: border-box;  /* Ensure that width and height include padding and border */
+}
+
+/* CSS-vars */
+
+:root
+{
+    
+    /* paddings */
+
+    --PADDING-TOP: 10px;
+    --PADDING-BOT: 10px;
+
+
+    /* COLORS*/
+
+    --BUTTON-COLOR: #195aa4;
+    --BORDER-COLOR: #000;
+    --BUTTON-TEXT-COLOR: #fff;
+
+}
+
+
+/* body styling */
+
+body 
+{
+    margin: 0; /* Removes all default margin from the element */
+    padding: 10px; /* Adds 10px padding (space inside the element) */
+    font-family: Arial, Helvetica, sans-serif; /* Sets the font to Arial. If Arial is unavailable, Helvetica is used. If neither is available, it falls back to any sans-serif font */
+    min-width: 400px;
+
+}
+
+
+/* input styling */
+
+input {
+    padding-left: 10px; /* Adds 10px padding to the left side of the input */
+    padding-right: 10px; /* same at the right side */
+    width: 100%; /* take up 100 % av the availabe space in the container */
+    padding-top: var(--PADDING-TOP);
+    padding-bottom: var(--PADDING-BOT);
+    box-sizing: border-box; /* Ensures that padding and border are included in the element's total width and height */
+    border: 1px solid var(--BORDER-COLOR);
+    margin-bottom: 4px; /* putting som space between the button and the input field*/
+
+
+}
+
+/* button container styling */
+.button-container {
+    display: flex; /* Align buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 10px; /* Space between buttons and the list */
+}
+
+/* button styling */
+
+button
+{
+    background: var(--BUTTON-COLOR); /* button color */
+    color: var(--BUTTON-TEXT-COLOR); /* text color */
+    padding: var(--PADDING-TOP) 20px; /* 10px padding for the X-axis and 20px for Y-axis */
+    font-weight: bold; /* making the text in the button bold */
+    cursor: pointer; /* Change cursor to pointer on hover */
+
+}
+
+/* hover */
+button:hover 
+{
+    background: rgb(9, 46, 121); /* Darken button color on hover */
+}
+
+button:active 
+{
+    background: rgb(13, 13, 13);
+
+}
+
+ul#ulElement 
+{
+    padding-left: 20px; /* Adds padding to the left side of the list to make room for bullets */
+}
+
+/* List item styling */
+ul#ulElement li 
+{
+    margin-bottom: 10px; /* Adds space below each list item */
+    list-style-type: disc; /* Adds bullet points to list items */
+}
